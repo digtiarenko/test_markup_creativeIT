@@ -1,52 +1,49 @@
-<section class="hero_section">
-  <header dir="rtl" class="container">
+<section class="hero_section container">
+  <header dir="rtl" class="header">
     <div class="wrapper">
       <div class="header_logo">
         <img src="./images/logos/logo.png" alt="logo" />
       </div>
       <nav>
-        <button>
-          תפריט
-          <svg class="icon" width="32" height="32">
+        <button class="btn--menu">
+          <svg class="icon" width="30" height="24">
             <use href="./images/icons/icons.svg#icon-expand_menu"></use>
           </svg>
+          תפריט
         </button>
       </nav>
     </div>
-    <div class="wrapper">
-      <ul>
-        <li>
-          <a href="tel:1800-599-995"> 1800-599-995 </a> <span>צרו קשר </span>
-        </li>
-        <li>
-          <div class="separator"></div>
-        </li>
-        <li>
-          <button style="display: flex; flex-direction: column">
-            <svg class="icon" width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-bell_fill"></use></svg
-            >מה חדש
-          </button>
-          <button style="display: flex; flex-direction: column">
-            <svg class="icon" width="32" height="32">
-              <use href="./images/icons/icons.svg#icon-search"></use>
-            </svg>
-            חיפוש
-          </button>
-        </li>
-        <li>
-          <div class="separator"></div>
-        </li>
-        <li>
-          <select name="lang" id="lang-select">
-            <option value="he">HE</option>
-          </select>
-        </li>
-        <li>
-          <button>לתרומה</button>
-        </li>
-      </ul>
-    </div>
+
+    <ul class="wrapper header-toolbar">
+      <li class="header-element vertical-line font-medium">
+        <span class="font-medium margin">צרו קשר </span>
+        <a class="number" href="tel:1800-599-995"> 1800-599-995 </a>
+      </li>
+
+      <li class="wrapper header-element vertical-line">
+        <button class="button-notification font-small" type="button">
+          <svg class="icon" width="20" height="25">
+            <use href="./images/icons/icons.svg#icon-bell_fill"></use></svg
+          >מה חדש
+        </button>
+        <button class="button-notification font-small" type="button">
+          <svg class="icon" width="20" height="25">
+            <use href="./images/icons/icons.svg#icon-search"></use>
+          </svg>
+          חיפוש
+        </button>
+      </li>
+
+      <li class="header-element">
+        <select class="lang" name="lang" id="lang-select">
+          <option value="he">HE</option>
+          <option value="he">ENG</option>
+        </select>
+      </li>
+      <li>
+        <button class="btn">לתרומה</button>
+      </li>
+    </ul>
   </header>
   <div class="hero_container">
     <div class="text_wrapper">
