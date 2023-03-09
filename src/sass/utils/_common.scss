@@ -75,10 +75,11 @@ img {
 .bg-overlay2 {
   overflow: hidden;
 
-  background-image: url(../images/background/circles.png),
-    url(../images/background/bg-overlay3.svg),
-    url(../images/background/bg-overlay2.svg);
+  background-image: url(../images/background/bg-overlay3.svg),
+    url(../images/background/bg-overlay2.svg),
+    url(../images/background/circles.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: contain, 788px, 800px;
-  background-position: top 170px left -75px, top 50px left, bottom 200px right;
+  background-size: 788px, 800px, contain;
+  background-position: top 50px left -100px, bottom 200px right,
+    top 170px left -75px;
 }
