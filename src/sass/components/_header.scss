@@ -8,20 +8,11 @@
     background-image: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.06) 100%
+        rgba(0, 0, 0, 0) 100%
       ),
       url('../images/hero_bg.png');
-    background-size: auto 500px, contain;
+    background-size: auto 540px, contain;
     background-repeat: no-repeat;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      clip-path: ellipse(67% 72% at 50% 25%);
-    }
   }
 
   &_container {
@@ -39,7 +30,7 @@
     font-size: 64px;
     color: white;
     font-weight: 500;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
   }
   &_subheader {
@@ -50,10 +41,8 @@
   }
 
   &_link {
-    display: inline-block;
-
-    gap: 10px;
-    // justify-content: center;
+    display: flex;
+    gap: 13px;
     align-items: center;
     color: white;
     font-weight: 700;
@@ -73,6 +62,7 @@
     }
   }
 }
+
 .header_form_buton {
   cursor: pointer;
   font-weight: 700;
@@ -126,15 +116,13 @@
 }
 
 .header {
-  //   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 38px;
+  padding-top: 23px;
   margin-bottom: 60px;
 
   &_form {
-    // position: absolute;
     bottom: 200px;
     margin-top: 98px;
     display: flex;

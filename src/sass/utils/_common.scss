@@ -57,3 +57,16 @@ img {
   font-size: 30px;
   font-weight: 600;
 }
+
+.section_subheader {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.bg-overlay {
+  overflow: hidden;
+  background-image: url(../images/icons/bg-ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: 788px;
+  background-position: 85% 20%;
+}

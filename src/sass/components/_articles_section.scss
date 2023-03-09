@@ -3,6 +3,7 @@
 
   & .article_list {
     margin-top: 42px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +16,7 @@
     padding: 16px 13px 16px 13px;
     width: 302px;
     height: 382px;
-    box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.09);
     border-radius: 24px;
     background-color: white;
     &:hover {
@@ -45,7 +46,8 @@
   & .article_link {
     display: flex;
     align-items: center;
-    gap: 10px;
+
+    gap: 8px;
     margin-right: auto;
     margin-left: auto;
     font-weight: 500;
