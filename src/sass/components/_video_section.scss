@@ -1,6 +1,5 @@
 .video_section {
   margin-top: 124px;
-  // margin-bottom: 42px;
 }
 
 .video_player {
@@ -46,4 +45,66 @@
   right: 50%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 1);
+}
+.donate_form {
+  height: 160px;
+  margin-top: 124px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_title {
+    font-weight: 700;
+    font-size: 24px;
+    color: $accent-blue;
+  }
+
+  &_subtitle {
+    color: $accent-blue;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &_input {
+    outline: none;
+    width: 342px;
+    height: 53px;
+    padding: 16px 24px 16px 24px;
+    background-color: white;
+    border: 0.632166px solid #004990;
+    border-radius: 40px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  &_button {
+    cursor: pointer;
+    color: $accent-blue;
+    width: 192px;
+    height: 48px;
+    border: 1px solid $accent-blue;
+    border-radius: 40px;
+    background-color: transparent;
+
+    &:hover {
+      color: black;
+      background-color: white;
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.27);
+    }
+  }
+}
+
+.donate_wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.video_container {
+  padding-right: 93px;
+  padding-left: 93px;
+  background-image: url('../images/background/footer_bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }

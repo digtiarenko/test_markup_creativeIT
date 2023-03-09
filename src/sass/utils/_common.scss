@@ -64,9 +64,21 @@ img {
 }
 
 .bg-overlay {
+  max-width: 1440px;
   overflow: hidden;
-  background-image: url(../images/icons/bg-ellipse.svg);
+  background-image: url(../images/background/bg-ellipse.svg);
   background-repeat: no-repeat;
-  background-size: 788px;
-  background-position: 85% 20%;
+  background-size: auto auto;
+  background-position: top right;
+}
+
+.bg-overlay2 {
+  overflow: hidden;
+
+  background-image: url(../images/background/circles.png),
+    url(../images/background/bg-overlay3.svg),
+    url(../images/background/bg-overlay2.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, 788px, 800px;
+  background-position: top 170px left -75px, top 50px left, bottom 200px right;
 }
