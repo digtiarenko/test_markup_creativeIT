@@ -5,7 +5,7 @@
 
 .about_list {
   position: relative;
-  //   margin-top: 42px;
+
   padding-top: 18px;
   margin-bottom: 5px;
   display: flex;
@@ -33,7 +33,7 @@
       z-index: -1;
       top: 0;
       right: -60px;
-      content: '1';
+      content: '';
       background-color: #e8edf4;
     }
   }
@@ -60,7 +60,7 @@
       z-index: -1;
       top: 0;
       right: 0;
-      content: '2';
+      content: '';
 
       background-color: #d0dbe9;
     }
@@ -89,7 +89,7 @@
       z-index: -1;
       top: 0;
       right: 0;
-      content: '3';
+      content: '';
 
       background-color: #5b80b3;
     }
@@ -116,8 +116,8 @@
       z-index: -1;
       top: 0;
       right: 0;
-      content: '4';
-      background-color: #e8edf4;
+      content: '';
+      background-color: #e1e7f0af;
     }
   }
   & .fifth_item {
@@ -142,7 +142,7 @@
       z-index: -1;
       top: 0;
       right: 0;
-      content: '5';
+      content: '';
       background-color: #144a92;
     }
   }
