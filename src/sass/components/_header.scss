@@ -1,19 +1,100 @@
-.hero_section {
-  width: 1440px;
-  height: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #c4c4c4;
-  clip-path: ellipse(67% 72% at 50% 25%);
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url('../images/hero_bg.png');
+.hero {
+  &_section {
+    width: 1440px;
+    height: 640px;
+    margin-left: auto;
+    margin-right: auto;
 
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.06) 100%
+      ),
+      url('../images/hero_bg.png');
+    background-size: auto 500px, contain;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      clip-path: ellipse(67% 72% at 50% 25%);
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 180px;
+  }
+
+  &_text_wrapper {
+    width: 520px;
+  }
+
+  &_header {
+    font-size: 64px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+  }
+  &_subheader {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+  }
+
+  &_link {
+    display: inline-block;
+
+    gap: 10px;
+    // justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 5%;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+
+    &:hover {
+      color: black;
+      // box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.27);
+      // background-color: rgb(252, 248, 248, 0.3);
+      & .icon {
+        fill: black;
+        stroke: black;
+      }
+    }
+  }
+}
+.header_form_buton {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 16px 24px 16px 24px;
+  border: none;
+  border-radius: 51px;
+  width: 140px;
+  height: 48px;
+  background-color: rgba(89, 97, 114, 1);
+  box-shadow: 0px 4px 14px rgba(15, 15, 15, 0.4);
+
+  &:hover {
+    color: black;
+    background-color: $accent-btn-color;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.27);
+
+    & .icon {
+      fill: black;
+      stroke: black;
+    }
+  }
 }
 
 .btn--menu {
@@ -52,6 +133,31 @@
   padding-top: 38px;
   margin-bottom: 60px;
 
+  &_form {
+    // position: absolute;
+    bottom: 200px;
+    margin-top: 98px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 102px;
+    width: 600px;
+    height: 80px;
+    align-self: center;
+    box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
+
+    &_input {
+      padding: 24px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+  }
   &-element {
     display: flex;
     justify-content: space-between;
@@ -145,8 +251,10 @@
 }
 .btn {
   width: 140px;
-  height: 48px; //   text-align: center;
-
+  height: 48px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
   padding: 12px 43px;
   border: none;
   background-color: $accent-btn-color;
