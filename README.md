@@ -1,7 +1,7 @@
 # test_markup_creativeIT
 
 ## 1 Project is bundled with Parcel,
-which allows us to split the HTML file into partials (e.g., footer) for each section. This technique is super convenient for maintaining and improving the code. Additionally, the bundler allows us to split a single CSS file, resulting in pairs of HTML and CSS chunks, making it super easy to support.
+which allows us to split the HTML file into partials (e.g., footer) for each section. This technique is super convenient for maintaining and improving the code. Additionally, the bundler allows us to split a single CSS file, resulting in pairs of HTML and CSS chunks, making it super easy to support. It minimifies HTML and CSS.
 
 ## 2. Since the page is in Hebrew, 
 a base direction rule RLT is applied to HTML. I also declared the language of the document using the lang attribute. For the same reason, we use 'logical properties' when setting up styles, such as using 'start' and 'end' instead of 'left' or 'right'. This approach makes it much easier to localize content in the future or include text with a different direction. The alignment of the content treats start as right and end as left.
