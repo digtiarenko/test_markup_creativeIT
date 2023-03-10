@@ -12,4 +12,5 @@ I divided all images into content, background, and icons. Everything is optimize
 ## 4. I used SCSS preprocessor, 
 which allows us to use $variables and @mixins, which might be handy if the project has a mobile and tablet version. Still, under the hood, it allows us to use simple CSS if needed.
 
-## 5. Lastly, I added some :hover effects to the page based on my opinion since there were none in Figma.
+## 5. Lastly, I added some :hover effects 
+to the page based on my opinion since there were none in Figma.
