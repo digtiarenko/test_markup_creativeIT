@@ -102,6 +102,10 @@ dist
 # FuseBox cache
 .fusebox/
 
+.editorconfig
+
+.prettierrc.json
+
 # DynamoDB Local files
 .dynamodb/
 
