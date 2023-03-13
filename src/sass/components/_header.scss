@@ -18,19 +18,18 @@
   &_container {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 180px;
   }
 
   &_text_wrapper {
     width: 520px;
+    margin-right: 180px;
   }
 
   &_header {
     font-size: 64px;
     color: white;
     font-weight: 500;
-    // margin-bottom: 15px;
+    line-height: 1.05;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
   }
   &_subheader {
@@ -53,8 +52,6 @@
 
     &:hover {
       color: black;
-      // box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.27);
-      // background-color: rgb(252, 248, 248, 0.3);
       & .icon {
         fill: black;
         stroke: black;
@@ -119,11 +116,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 23px;
+  padding-top: 31px;
   margin-bottom: 60px;
 
   &_form {
-    bottom: 200px;
+    // bottom: 200px;
     margin-top: 98px;
     display: flex;
     justify-content: space-between;
@@ -152,7 +149,7 @@
     align-items: center;
     height: 50px;
     position: relative;
-    margin-left: 20px;
+    // margin-left: 20px;
 
     & .number {
       margin-right: 10px;
@@ -183,11 +180,12 @@
 // Button animation
 
 .button-notification {
-  position: relative;
+  // position: relative;
   margin-left: 2px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   color: white;
   background-color: transparent;
@@ -212,7 +210,7 @@
 }
 
 .lang {
-  width: 55px;
+  font-size: 18px;
   padding: 11px 11px 10px 15px;
   border-radius: 5%;
   color: white;
