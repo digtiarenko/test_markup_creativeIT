@@ -23,6 +23,11 @@ a {
   color: inherit;
 }
 
+input,
+button,
+textarea {
+  font-family: inherit;
+}
 ul {
   list-style: none;
 }
@@ -33,9 +38,19 @@ img {
   height: auto;
 }
 
+.link {
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    display: block;
+    font-weight: 600;
+    color: $accent-blue;
+  }
+}
+
 .container {
   max-width: 1440px;
-
   width: 100%;
   padding-right: 80px;
   padding-left: 80px;
@@ -84,4 +99,8 @@ img {
   background-size: contain, 788px, 800px;
   background-position: top 180px left -75px, top 50px left -80px,
     bottom 200px right;
+}
+
+pre {
+  font-family: inherit;
 }
