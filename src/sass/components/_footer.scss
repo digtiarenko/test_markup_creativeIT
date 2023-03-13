@@ -23,8 +23,7 @@
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
-  gap: 270px;
-
+  // gap: 270px;
   align-items: center;
 }
 
@@ -33,12 +32,11 @@
   padding-right: 93px;
   padding-left: 93px;
   background-color: rgba(237, 238, 248, 1);
-
   gap: 234px;
 
   &-group--right {
     display: flex;
-    flex-grow: 1;
+    // flex-grow: 1;
     flex-direction: column;
     max-width: 50%;
   }
@@ -47,7 +45,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    flex-grow: 1;
+    // flex-grow: 1;
     // width: 37%;
 
     & .footer_title {
