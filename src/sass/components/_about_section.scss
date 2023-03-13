@@ -5,7 +5,6 @@
 
 .about_list {
   position: relative;
-
   padding-top: 38px;
   margin-bottom: 25px;
   display: flex;
@@ -76,6 +75,7 @@
     position: relative;
     top: 10px;
     right: -10px;
+    z-index: 20;
 
     & .about_title,
     .about_number,
@@ -83,7 +83,7 @@
       color: white;
     }
 
-    &::before {
+    &::after {
       display: block;
       width: 222px;
       height: 222px;

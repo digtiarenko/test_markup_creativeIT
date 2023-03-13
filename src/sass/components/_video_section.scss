@@ -1,5 +1,5 @@
 .video_section {
-  margin-top: 124px;
+  margin-top: 60px;
 }
 
 .video_player {
@@ -10,20 +10,22 @@
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    height: 540px;
+    height: auto;
   }
 }
 
 .play--icon {
   display: flex;
+
   justify-content: center;
   align-items: center;
   width: 86px;
   height: 86px;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
-  right: 47%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 
@@ -99,12 +101,4 @@
 .donate_wrapper {
   display: flex;
   gap: 24px;
-}
-
-.video_container {
-  padding-right: 93px;
-  padding-left: 93px;
-  background-image: url('../images/background/footer_bg.png');
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
