@@ -1,21 +1,24 @@
 .articles_section {
-  margin-top: 135px;
+  margin-top: 125px;
 
   & .article_list {
-    margin-top: 45px;
+    margin: 42px -12px -12px -12px;
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   & .article_card {
+    width: 302px;
+    height: 382px;
+    margin: 12px;
+
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 16px 13px 16px 13px;
-    width: 302px;
-    height: 382px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.09);
     border-radius: 24px;
     background-color: white;

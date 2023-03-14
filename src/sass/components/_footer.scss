@@ -7,7 +7,7 @@
 }
 
 .footer_upper {
-  height: 358px;
+  min-height: 358px;
   padding-top: 56px;
   padding-bottom: 56px;
   background-color: rgba(99, 116, 208, 0.05);
@@ -25,15 +25,17 @@
 }
 
 .footer_down {
-  height: 185px;
+  min-height: 185px;
   background-color: rgba(237, 238, 248, 1);
   gap: 234px;
 
   &-group--right {
     display: flex;
     margin-top: 20px;
+    margin-left: 52px;
+    margin-right: 50px;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 50%; //????
   }
   &-group--left {
     display: flex;
@@ -55,8 +57,9 @@
 
 .footer_flex {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
 
   & li {
     min-width: 178px;
@@ -103,6 +106,7 @@
 
 .logo_wrapper {
   display: flex;
+  flex-grow: 1;
   gap: 10px;
 
   & .footer_icon {
@@ -127,4 +131,11 @@
     margin-right: 4px;
     margin-left: 4px;
   }
+}
+
+.donate_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }

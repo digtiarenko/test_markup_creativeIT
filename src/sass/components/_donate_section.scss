@@ -1,7 +1,7 @@
 .donate_section {
   display: flex;
   flex-direction: column;
-  height: 770px;
+  // height: 770px;
   margin-top: 125px;
   text-align: center;
 
@@ -36,6 +36,13 @@
   font-size: 24px;
 }
 
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .donate_btn {
   width: 205px;
   height: 62px;
@@ -56,7 +63,7 @@
 .btn-white {
   background-color: white;
   color: $accent-btn-color;
-  margin-right: 15px;
+  // margin-right: 15px;
   &:hover {
     color: black;
     background-color: $accent-btn-color;

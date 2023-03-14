@@ -1,5 +1,5 @@
 .about_section {
-  margin-top: 110px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -8,8 +8,14 @@
   padding-top: 38px;
   margin-bottom: 25px;
   display: flex;
-  justify-content: space-between;
-  height: 530px;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 530px;
+
+  @include for-size(mobile) {
+    right: 0;
+    top: 0;
+  }
 
   & .first_item {
     width: 268px;
@@ -19,6 +25,14 @@
     right: -80px;
     align-items: start;
 
+    @media (max-width: 1406px) {
+      right: -35px;
+    }
+    @media (max-width: 708px) {
+      right: 0;
+      top: 0;
+      align-items: center;
+    }
     & .about_title {
       color: black;
     }
@@ -34,6 +48,11 @@
       right: -60px;
       content: '';
       background-color: #e8edf4;
+
+      @media (max-width: 708px) {
+        right: 0;
+        top: 0;
+      }
     }
   }
 
@@ -43,8 +62,13 @@
     height: 239px;
     padding-bottom: 10px;
     position: relative;
-    right: -52px;
-    top: -5px;
+    right: -64px;
+    top: -15px;
+
+    @media (max-width: 708px) {
+      right: 0;
+      top: 0;
+    }
 
     & .about_title,
     .about_text {
@@ -74,8 +98,22 @@
     padding-bottom: 10px;
     position: relative;
     top: 10px;
-    right: -10px;
     z-index: 20;
+    right: -10px;
+
+    @media (max-width: 1440px) {
+      right: 0px;
+    }
+    @media (max-width: 888px) {
+      right: -23px;
+    }
+    @media (max-width: 708px) {
+      right: 0;
+      top: 0;
+    }
+    @media (max-width: 540px) {
+      margin-top: 0;
+    }
 
     & .about_title,
     .about_number,
@@ -108,6 +146,22 @@
     top: 20px;
     right: -15px;
 
+    @media (max-width: 1406px) {
+      right: 55px;
+    }
+    @media (max-width: 1151px) {
+      right: -22px;
+    }
+    @media (max-width: 888px) {
+      right: 37px;
+    }
+    @media (max-width: 587px) {
+      right: 0;
+    }
+    @media (max-width: 540px) {
+      margin-top: 0;
+    }
+
     & .about_title,
     .about_text {
       color: black;
@@ -134,6 +188,12 @@
     align-self: start;
     top: 20px;
     right: -20px;
+    @media (max-width: 1151px) {
+      right: 30px;
+    }
+    @media (max-width: 587px) {
+      right: 0;
+    }
 
     & .about_title,
     .about_number,
@@ -161,6 +221,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 2;
+
+  @media (max-width: 587px) {
+    // margin-top: 0;
+    margin-bottom: 10px;
+  }
 
   &:hover::before {
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);

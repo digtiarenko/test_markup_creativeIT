@@ -1,18 +1,16 @@
 .help_section {
-  margin-top: 70px;
+  margin-top: 76px;
 
   &_card {
     display: flex;
     flex-direction: column;
-    // justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
     padding: 0px 15px;
-
-    // padding-top: 12px;
     text-align: center;
     width: 144px;
     height: 174px;
+    margin: 9px;
     background: #ffffff;
     box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
     border-radius: 24px;
@@ -25,10 +23,11 @@
   }
 
   &_card_list {
-    margin-top: 48px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 48px -9px -9px -9px;
     align-items: center;
   }
 }

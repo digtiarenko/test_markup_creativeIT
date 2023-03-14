@@ -12,8 +12,12 @@
       url('../images/hero_bg.png');
     background-size: auto 500px, cover;
     background-repeat: no-repeat;
-
     background-position: 50% 0%;
+
+    @include for-size(mobile) {
+      background-size: auto 400px, cover;
+      background-position: 40% 0%;
+    }
   }
 
   &_container {
