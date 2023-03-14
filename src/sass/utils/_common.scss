@@ -1,5 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import './_variables';
+@import './_mixins.scss';
 
 body {
   font-family: 'Assistant', sans-serif;
@@ -56,6 +57,11 @@ img {
   padding-left: 80px;
   margin-left: auto;
   margin-right: auto;
+
+  @include for-size(mobile) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 .font-medium {

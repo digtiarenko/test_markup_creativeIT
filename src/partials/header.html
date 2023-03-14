@@ -1,64 +1,68 @@
-<section id="header" class="hero_section container">
-  <header dir="rtl" class="header">
-    <div class="wrapper">
-      <a href="index.html" class="header_logo">
-        <img src="./images/logos/logo.png" alt="logo" />
-      </a>
-      <nav>
-        <button class="btn--menu">
-          <svg class="icon" width="30" height="24">
-            <use href="./images/icons/icons.svg#icon-expand_menu"></use>
-          </svg>
-          תפריט
-        </button>
-      </nav>
-    </div>
+<section id="header" class="hero_section">
+  <div class="container">
+    <header dir="rtl" class="header">
+      <div class="wrapper">
+        <a href="index.html" class="header_logo">
+          <img src="./images/logos/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <button class="btn--menu">
+            <svg class="icon" width="30" height="24">
+              <use href="./images/icons/icons.svg#icon-expand_menu"></use>
+            </svg>
+            תפריט
+          </button>
+        </nav>
+      </div>
 
-    <ul class="wrapper header-toolbar">
-      <li class="header-element vertical-line font-medium">
-        <span class="font-medium margin">צרו קשר </span>
-        <a class="number" href="tel:1800-599-995"> 1800-599-995 </a>
-      </li>
+      <ul class="header-toolbar wrapper">
+        <li class="header-element vertical-line font-medium">
+          <span class="font-medium margin">צרו קשר </span>
+          <a class="number" href="tel:1800-599-995"> 1800-599-995 </a>
+        </li>
 
-      <li class="wrapper header-element vertical-line">
-        <button class="button-notification font-small" type="button">
-          <svg class="icon" width="24" height="24">
-            <use href="./images/icons/icons.svg#icon-bell_fill"></use></svg
-          >מה חדש
-        </button>
-        <button class="button-notification font-small" type="button">
-          <svg class="icon" width="24" height="24">
-            <use href="./images/icons/icons.svg#icon-search"></use>
+        <li class="wrapper header-element vertical-line">
+          <button class="button-notification font-small" type="button">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-bell_fill"></use></svg
+            >מה חדש
+          </button>
+          <button class="button-notification font-small" type="button">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-search"></use>
+            </svg>
+            חיפוש
+          </button>
+        </li>
+
+        <li class="header-element">
+          <select class="lang" name="lang" id="lang-select">
+            <option value="he">HE</option>
+            <option value="he">ENG</option>
+          </select>
+        </li>
+        <li>
+          <button class="btn">לתרומה</button>
+        </li>
+      </ul>
+    </header>
+    <div class="hero_container">
+      <div class="hero_text_wrapper">
+        <p class="hero_subheader">ךרד לכב ןטרסב םיקבאנ</p>
+        <h1 class="hero_header">שבוע המודעות למניעת סרטן העור ולגילוי מוקדם</h1>
+        <a class="hero_link" href="#"
+          >למידע נוסף
+          <svg class="icon" width="14" height="14">
+            <use href="./images/icons/icons.svg#icon-arrow_left"></use>
           </svg>
+        </a>
+      </div>
+      <form class="header_form">
+        <input class="header_form_input" type="text" placeholder="חיפוש... " />
+        <button class="header_form_buton font-medium" type="button">
           חיפוש
         </button>
-      </li>
-
-      <li class="header-element">
-        <select class="lang" name="lang" id="lang-select">
-          <option value="he">HE</option>
-          <option value="he">ENG</option>
-        </select>
-      </li>
-      <li>
-        <button class="btn">לתרומה</button>
-      </li>
-    </ul>
-  </header>
-  <div class="hero_container">
-    <div class="hero_text_wrapper">
-      <p class="hero_subheader">ךרד לכב ןטרסב םיקבאנ</p>
-      <h1 class="hero_header">שבוע המודעות למניעת סרטן העור ולגילוי מוקדם</h1>
-      <a class="hero_link" href="#"
-        >למידע נוסף
-        <svg class="icon" width="14" height="14">
-          <use href="./images/icons/icons.svg#icon-arrow_left"></use>
-        </svg>
-      </a>
+      </form>
     </div>
-    <form class="header_form">
-      <input class="header_form_input" type="text" placeholder="חיפוש... " />
-      <button class="header_form_buton font-medium" type="button">חיפוש</button>
-    </form>
   </div>
 </section>

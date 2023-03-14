@@ -1,7 +1,6 @@
 .hero {
   &_section {
-    width: 1440px;
-    height: 640px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 
@@ -11,8 +10,10 @@
         rgba(0, 0, 0, 0) 100%
       ),
       url('../images/hero_bg.png');
-    background-size: auto 500px, contain;
+    background-size: auto 500px, cover;
     background-repeat: no-repeat;
+
+    background-position: 50% 0%;
   }
 
   &_container {
@@ -23,6 +24,15 @@
   &_text_wrapper {
     width: 520px;
     margin-right: 180px;
+
+    @include for-size(tablet) {
+      width: auto;
+      margin-right: 100px;
+    }
+    @include for-size(mobile) {
+      width: auto;
+      margin-right: 0;
+    }
   }
 
   &_header {
@@ -32,6 +42,10 @@
     line-height: 1.05;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
     margin-bottom: 16px;
+
+    @include for-size(mobile) {
+      font-size: 34px;
+    }
   }
   &_subheader {
     color: white;
@@ -73,9 +87,13 @@
   border: none;
   border-radius: 51px;
   width: 140px;
+  min-width: 80px;
   height: 48px;
   background-color: rgba(89, 97, 114, 1);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.7);
+  @include for-size(mobile) {
+    margin: 16px;
+  }
 
   &:hover {
     color: black;
@@ -117,22 +135,31 @@
   }
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 31px;
   margin-bottom: 60px;
+  @include for-size(mobile) {
+    display: block;
+  }
 
   &_form {
-    // bottom: 200px;
+    max-width: 600px;
+    width: 100%;
     margin-top: 98px;
     display: flex;
     justify-content: space-between;
     background-color: white;
     border-radius: 102px;
-    width: 600px;
-    height: 80px;
+
     align-self: center;
     box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
 
@@ -141,6 +168,9 @@
       border: none;
       outline: none;
       background-color: transparent;
+      @include for-size(mobile) {
+        padding: 24px 24px 24px 12px;
+      }
 
       &::placeholder {
         font-weight: 400;
@@ -153,8 +183,14 @@
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    margin-left: 11px;
+    margin-right: 11px;
     position: relative;
-    // margin-left: 20px;
+
+    @include for-size(tablet) {
+      display: none;
+      margin-left: 40px;
+    }
 
     & .number {
       margin-right: 10px;
@@ -162,7 +198,10 @@
   }
 
   &-toolbar {
-    width: 551px;
+    max-width: 551px;
+    @include for-size(mobile) {
+      display: none;
+    }
   }
 }
 
@@ -176,16 +215,9 @@
   left: -17px;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 // Button animation
 
 .button-notification {
-  // position: relative;
   margin-left: 2px;
   cursor: pointer;
   display: flex;
